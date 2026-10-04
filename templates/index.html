@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuestra Historia 💜</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="fondo">
+
+        <div class="particulas"></div>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                27 <span>♡</span>
+            </div>
+
+            <div class="nav-links">
+
+                <a href="{{ url_for('inicio') }}" class="activo">
+                    Inicio
+                </a>
+
+                <a href="{{ url_for('historia') }}">
+                    Historia
+                </a>
+
+                
+
+                <a href="{{ url_for('para_ti') }}">
+                    Para ti
+                </a>
+
+                <a href="{{ url_for('jardin') }}">
+                    Jardín
+                </a>
+
+                <a href="{{ url_for('cancion') }}">
+                    Canción
+                </a>
+
+                <a href="{{ url_for('lo_que_amo') }}">
+                    Lo que amo
+                </a>
+
+                <a href="{{ url_for('sorpresa') }}">
+                    Sorpresa
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <main class="inicio">
+
+            <div class="flores flor-1">🌸</div>
+            <div class="flores flor-2">🌷</div>
+            <div class="flores flor-3">🌸</div>
+            <div class="flores flor-4">🌷</div>
+
+
+            <section class="presentacion">
+
+                <p class="pequeno">
+                    PARA EL AMOR DE MI VIDA
+                </p>
+
+                <h1>
+                    Nuestra historia
+                </h1>
+
+                <div class="corazon">
+                    💜
+                </div>
+
+                <p class="descripcion">
+                    Una pequeña página creada para celebrar
+                    todo lo que hemos vivido juntos.
+                </p>
+
+
+                <div class="contador">
+
+                    <div class="tiempo">
+                        <span id="dias">00</span>
+                        <small>DÍAS</small>
+                    </div>
+
+                    <div class="separador">:</div>
+
+                    <div class="tiempo">
+                        <span id="horas">00</span>
+                        <small>HORAS</small>
+                    </div>
+
+                    <div class="separador">:</div>
+
+                    <div class="tiempo">
+                        <span id="minutos">00</span>
+                        <small>MINUTOS</small>
+                    </div>
+
+                    <div class="separador">:</div>
+
+                    <div class="tiempo">
+                        <span id="segundos">00</span>
+                        <small>SEGUNDOS</small>
+                    </div>
+
+                </div>
+
+
+                <p class="fecha">
+                    27 · OCTUBRE · 2026
+                </p>
+
+
+                <a href="{{ url_for('historia') }}" class="boton">
+                    Comenzar nuestra historia
+                    <span>♡</span>
+                </a>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+
+            <p>
+                Hecho con mucho amor para ti 💜
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
